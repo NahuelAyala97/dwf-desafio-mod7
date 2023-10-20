@@ -3,7 +3,7 @@ import { state } from "../state";
 
 const logo = require("url:./img/logo.jpg");
 const burguer = require("url:./img/menu.svg");
-const cruz = require("url:./img/vector.svg");
+const cruz = require("url:./img/Vector.svg");
 
 class Header extends HTMLElement {
   shadow = this.attachShadow({ mode: "open" });

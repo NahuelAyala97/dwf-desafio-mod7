@@ -1,5 +1,3 @@
-//arrancar aca mañana, ya pudimos pasar direccion a geodata
-// ahora queda ver como guardamos en algolia para hacer busquedas
 import algolia from "algoliasearch";
 
 // Connect and authenticate with your Algolia app

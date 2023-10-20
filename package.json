@@ -1,0 +1,43 @@
+{
+  "name": "dwf-desafio-mod7",
+  "version": "1.0.0",
+  "repository": "git@github.com:NahuelAyala97/dwf-desafio-mod7.git",
+  "license": "MIT",
+  "scripts": {
+    "dev:be": "nodemon ./be-src/index.ts",
+    "dev:fe": "parcel ./fe-src/index.html",
+    "build:be": "tsc",
+    "build:fe": "parcel build ./fe-src/index.html",
+    "build": "npm rum build:be && npm run build:fe",
+    "start": "node ./be-dist/index.js",
+    "sync": "ts-node ./be-src/models/sync.ts"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "@mapbox/search-js-web": "^1.0.0-beta.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.5.0",
+    "@vaadin/router": "^1.7.5",
+    "algoliasearch": "^4.20.0",
+    "cloudinary": "^1.40.0",
+    "cors": "^2.8.5",
+    "dropzone": "^6.0.0-beta.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mapbox-gl": "^2.15.0",
+    "nodemon": "^3.0.1",
+    "parcel": "^2.9.3",
+    "pg": "^8.11.2",
+    "pg-hstore": "^2.3.4",
+    "resend": "^1.1.0",
+    "sequelize": "^6.32.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "console-browserify": "^1.2.0",
+    "process": "^0.11.10",
+    "util": "^0.12.3"
+  }
+}

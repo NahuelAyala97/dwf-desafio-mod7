@@ -1,0 +1,16 @@
+import "./router";
+import "./pages/home-page";
+import "./pages/auth-page";
+import "./pages/signIn-page";
+import "./pages/signUp-page";
+import "./pages/profile-page";
+import "./pages/dataUser-page";
+import "./pages/password-page";
+import "./pages/report-page";
+import "./pages/report-edit-page";
+import "./pages/myReports-page";
+import "./components/header";
+import "./components/input-custom";
+import "./components/button-custom";
+import "./components/title-subtitle";
+import "./components/pet-card";

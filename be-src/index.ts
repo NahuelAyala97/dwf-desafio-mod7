@@ -8,7 +8,9 @@ const cors = require("cors");
 const app = express();
 app.use(express.json({ limit: "10mb" }));
 app.use(cors());
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__dirname, "../dist")));
 
 app.post("/auth", async (req, res) => {
   if (!req.body) {

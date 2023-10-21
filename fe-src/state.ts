@@ -1,8 +1,9 @@
 import { geoCoding } from "./lib/mapbox";
 
 let URL_API_BASE;
+console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV == "production") {
-  URL_API_BASE = "https://";
+  URL_API_BASE = "https://pet-finder-14nm.onrender.com";
 } else {
   URL_API_BASE = "http://localhost:3000";
 }
